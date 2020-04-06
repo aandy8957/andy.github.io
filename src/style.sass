@@ -1,0 +1,194 @@
+$color_yellow: #ffb336
+$color_blue: #27232f
+$color_white: #f3f7f7
+$color_grey: #333
+
+$font_base_size: 10px
+
+$max_content_width: 768px
+
+*
+  // border: solid 1px
+  position: relative
+
+@mixin size($w,$h)
+  width: $w
+  height: $h
+
+ 
+  
+.aboutme
+  display: inline-block
+  padding: 10px
+  padding-left: 50px
+  padding-right: 50px
+  background-color: $color_yellow
+  font-family: 微軟正黑體
+  font-weight: bold
+  color: white
+  border-bottom: solid 10px #F5F0BA
+  letter-spacing: 5px
+  
+ 
+
+.nav_area
+  background-color: $color_yellow
+  width: 100%
+  margin: 0
+  padding: 0
+  text-align: center
+  margin: 0 auto
+  
+  
+  
+  
+  
+html,body
+  padding: 0px
+  margin: 0px
+  overflow-x: hidden
+  
+
+.max_width
+  max-width: $max_content_width 
+  margin-left: auto
+  margin-right: auto
+  
+.header
+  height: 300px
+  background-color: $color_blue
+
+  
+  & .icon
+    position: absolute
+    width: 150px
+    float: left
+    left: 20%
+    top: 20%
+    // transform: translateX(-50%) translateY(-50%)
+  & h1 
+    font-family: 微軟正黑體
+    font-weight: 500
+    vertical-align: middle
+    left: 40%
+    top: 30%
+    color: $color_white
+    margin: 0
+    padding: 0
+  & .small_English
+      font-size: $font_base_size*1.5   
+ 
+.poster
+  position: relative
+  float: right
+  margin: 80px
+  
+  
+  
+  
+.content
+  font-family: 'Oswald',微軟正黑體
+  padding: 0px
+  
+
+  & .title_hr
+    border: solid 3px $color_yellow
+    width: 100px
+  & .title_hr1
+    border: solid 3px $color_blue
+    width: 100px
+    
+  
+  & h5
+    // margin-top: 30px
+    margin: 0
+    padding: 0
+  & h1
+    font-size: $font_base_size*4
+    
+  & h2
+    font-size: $font_base_size*3
+  & h3
+    font-size: $font_base_size*2
+  
+  & h1.small_english
+    font-size: $font_base_size*2.4
+  & h2.small_english 
+    font-size: $font_base_size*1.6  
+  & h3.small_english
+    font-size: $font_base_size*1.2
+  & .small_english
+    margin-top: -15px
+  & .button
+    padding: 5px 25px
+    display: inline-block
+    margin-right: 0px
+    letter-spacing: 2px
+    font-size: $font_base_size*1.5
+    font-weight: bold
+    border: solid 1px $color_blue
+    background-color: $color_yellow
+    
+  & .button_blue
+      background-color: $color_blue
+      color: $color_white
+      font-weight: 100px
+  & .button_yellow
+      background-color: $color_yellow
+    
+  & .color_chip
+    display: inline-block
+    margin-right: 25px
+    & .color_block,& .color_tag
+      display: inline-block
+      vertical-align: middle
+    & .color_tag
+      width: 60px
+    & .color_block
+      border: solid 2px white
+      +size(30px,30px)
+   
+    & .color_block_yellow
+      background-color: $color_yellow
+    & .color_block_blue
+      background-color: $color_blue
+    & .color_block_white
+      background-color: $color_white
+    & .color_block_grey
+      background-color: $color_grey
+
+.content_white
+  background-color: $color_white
+  color: $color_blue
+  & .small_english
+    color: $color_blue
+  & .button
+    border: solid 1px white
+
+
+.content_grey
+  background-color: $color_yellow
+  color: $color_white
+  & .small_english
+    color: $color_white
+  & h1,& h2,& h3
+    font-weight: 500
+  & .button
+    border: solid 1px white
+    
+
+.content_blue
+  background-color: $color_blue
+  color: $color_white
+  & .small_english
+    color: $color_yellow
+  & h1,& h2,& h3
+    font-weight: 500
+  & .button
+    border: solid 1px white
+    
+
+
+
+  
+
